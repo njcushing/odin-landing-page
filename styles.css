@@ -1,10 +1,15 @@
 body {
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     height: 100vh;
     margin: auto;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* max-width: 910px; */ /* If we want to cull the background colours at a certain width */
 }
 
+/* Header - TopBar, Hero */
 
 .header {
     background-color: #1F2937;
@@ -14,7 +19,7 @@ body {
     justify-content: center;
     align-items: baseline;
     margin: auto;
-    padding: 10px 130px;
+    padding: 10px 0px;
     max-width: 650px;
 }
 .logo {
@@ -43,19 +48,22 @@ body {
 }
 .hero {
     color: #F9FAF8;
-    margin: 80px auto;
-    padding: 10px 130px;
+    margin: auto;
+    padding: 80px 0px;
     max-width: 650px;
 }
 
 
-
-
-
-
-
+/* Footer - Copyright Text */
 
 .footer{
     display: flex;
-    align-self: flex-end;
+    justify-content: center;
+    background-color: #1F2937;
+}
+.copyright {
+    color: #F9FAF8;
+    margin: auto;
+    padding: 20px 0px;
+    max-width: 650px;
 }
