@@ -28,6 +28,8 @@ body {
     font-weight: 700;
 }
 .header-links {
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -59,7 +61,7 @@ body {
     font-weight: 900;
 }
 .title-subtext {
-    color: white;
+    color: #E5E7EB;
     font-size: 18px;
     margin: 6px auto;
 }
@@ -69,9 +71,10 @@ body {
     background-color: #3882F6;
     color: #f5f5f5;
     margin: 6px auto;
-    padding: 6px 24px;
-    font-size: 14px;
+    padding: 8px 32px;
+    font-size: 18px;
     font-weight: 600;
+    flex-shrink: 0;
 }
 .header-content button:hover {
     background-color: #609dff;
@@ -133,7 +136,7 @@ body {
     text-align: center;
     line-height: 230px;
     font-size: 11px;
-    flex-shrink: -100;
+    flex-shrink: 0;
     align-self: center;
 }
 
@@ -162,10 +165,51 @@ body {
     align-self: end;
 }
 
-/*  */
+/* Call to Action - Texts, Button */
 
 .call-to-action {
-    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 100px 40px;
+}
+.call-to-action-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #3882F6;
+    padding: 50px 120px;
+    width: 800px;
+    gap: 30px;
+}
+.call-to-action-title {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+.call-to-action-subtext {
+    font-size: 18px;
+    color: white;
+}
+.call-to-action-container button {
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: #f5f5f5;
+    margin: 6px 0px;
+    padding: 8px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: flex-end;
+    flex-shrink: 0;
+}
+.call-to-action-container button:hover {
+    background-color: #609dff;
+    color: white;
+}
+.call-to-action-container button:active {
+    background-color: #154aa0;
+    color: rgb(172, 172, 172);
 }
 
 /* Footer - Copyright Text */
